@@ -3,13 +3,24 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Register from "./pages/Register";
 
 axios.defaults.baseURL = import.meta.env.VITE_AXIOS_BASE_URL;
+axios.defaults.withCredentials = true;
 
 function App() {
   const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const axiosGet = async () => {
+      const { data } = await axios.get("/users/profile");
+
+      setUser(data);
+    };
+
+    axiosGet();
+  }, []);
 
   return (
     <BrowserRouter>
