@@ -22,7 +22,7 @@ const Login = () => {
         setUser(userDoc);
         setRedirect(true);
       } catch (error) {
-        alert(`Deu um erro ao logar: ${error.response.data}`);
+        alert(`Deu um erro ao logar: ${JSON.stringify(error)}`);
       }
     } else {
       alert("Você precisa preencher o e-mail e a senha!");
