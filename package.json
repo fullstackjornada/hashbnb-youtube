@@ -1,7 +1,49 @@
 {
+  "name": "hashbnb-youtube",
+  "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
+    "call-bind-apply-helpers": "^1.0.2",
+    "call-bound": "^1.0.4",
+    "dunder-proto": "^1.0.1",
+    "es-define-property": "^1.0.1",
+    "es-errors": "^1.3.0",
+    "es-object-atoms": "^1.1.1",
+    "follow-redirects": "^1.15.9",
+    "function-bind": "^1.1.2",
+    "get-intrinsic": "^1.3.0",
+    "get-proto": "^1.0.1",
+    "gopd": "^1.2.0",
+    "has-symbols": "^1.1.0",
+    "hasown": "^2.0.2",
     "image-downloader": "^4.3.0",
+    "math-intrinsics": "^1.1.0",
+    "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
+    "object-inspect": "^1.13.4",
+    "punycode": "^1.4.1",
+    "qs": "^6.14.0",
+    "side-channel": "^1.1.0",
+    "side-channel-list": "^1.0.0",
+    "side-channel-map": "^1.0.1",
+    "side-channel-weakmap": "^1.0.2",
     "url": "^0.11.4"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run start --prefix back-end",
+    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstackjornada/hashbnb-youtube.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullstackjornada/hashbnb-youtube/issues"
+  },
+  "homepage": "https://github.com/fullstackjornada/hashbnb-youtube#readme",
+  "description": ""
 }

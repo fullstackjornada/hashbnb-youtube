@@ -17,9 +17,13 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.13",
     "axios": "^1.8.3",
+    "build": "^0.1.4",
+    "hashbnb-youtube": "file:..",
+    "npm": "^11.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0",
+    "run": "^1.5.0",
     "tailwindcss": "^4.0.13"
   },
   "devDependencies": {
