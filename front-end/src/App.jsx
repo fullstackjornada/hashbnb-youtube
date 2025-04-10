@@ -12,7 +12,7 @@ import Place from "./pages/Place";
 axios.defaults.baseURL =
   import.meta.env.MODE === "development"
     ? "http://localhost:4000/api"
-    : "http://localhost:4000/api";
+    : "https://hashbnb-youtube.onrender.com/api";
 
 axios.defaults.withCredentials = true;
 
